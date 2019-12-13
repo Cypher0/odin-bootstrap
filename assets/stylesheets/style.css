@@ -60,6 +60,18 @@ h5 {
   color: rgba(3,3,3,.4)
 }
 
+h6 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: condensed;
+  line-height: 20px;
+}
+
+h6 a {
+  color: inherit;
+}
+
 .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
@@ -160,7 +172,8 @@ h5 {
 
 .featured-stories,
 .stories-main,
-.opinion-news {
+.opinion-news,
+.more-stories {
   padding-top: 15px;
 }
 
@@ -198,6 +211,14 @@ h5 {
 .featured-story,
 .culture-travel-item {
   padding-bottom: 20px;
+}
+
+.more-stories-item {
+  display: grid;
+  grid-template-columns: 135px 1fr;
+  grid-gap: 15px;
+  padding: 14px 0;
+  border-top: 1px solid #ddd;
 }
 
 .featured-story img,
