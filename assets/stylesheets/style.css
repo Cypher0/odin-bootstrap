@@ -227,11 +227,14 @@ h6 a:hover {
 }
 
 .featured-story,
-.culture-travel-item {
+.culture-travel-item,
+.opinion,
+.latest-news {
   padding-bottom: 20px;
 }
 
-.more-stories-item {
+.more-stories-item,
+.latest-news-item {
   display: grid;
   grid-template-columns: 135px 1fr;
   grid-gap: 15px;
@@ -247,12 +250,14 @@ h6 a:hover {
   border-top: 1px solid #ddd;
 }
 
-.opinion-first {
+.opinion-first,
+.latest-first {
   padding-top: 0;
   border-top: 0;
 }
 
-.opinion-item h6 a:hover {
+.opinion-item h6 a:hover,
+.latest-news-item h6 a:hover {
   text-decoration: none;
   color: #f72210;
 }
@@ -270,7 +275,8 @@ h6 a:hover {
 .featured-story img,
 .top-story img,
 .culture-travel-item img,
-.opinion-item img {
+.opinion-item img,
+.latest-news-item img {
   width: 100%;
 }
 
@@ -296,4 +302,61 @@ h6 a:hover {
 
 .tag a:hover {
   text-decoration: none;
+}
+
+.sign-up {
+  margin: 0 auto 30px;
+  padding: 20px;
+  max-width: 300px;
+  border: 1px solid #e5e5e5;
+  background-color: #f4f5f6;
+}
+
+.sign-up header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-weight: bold;
+  font-stretch: condensed;
+  text-transform: uppercase;
+}
+
+.n-icon {
+  display: block;
+  margin-right: 10px;
+  width: 29px;
+  height: 28px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+}
+
+.sign-up-link {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: condensed;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #666;
+}
+
+.sign-up-link:hover {
+  text-decoration: none;
+  background-color: #999;
+  color: #fff
+}
+
+.update-link {
+  display: block;
+  font-weight: bold;
+  font-stretch: condensed;
+  color: #333;
+}
+
+.update-link:hover {
+  text-decoration: none;
+  color: #333;
 }
