@@ -72,6 +72,11 @@ h6 a {
   color: inherit;
 }
 
+h6 a:hover {
+  text-decoration: underline #f72210;
+  color: inherit;
+}
+
 .container-fluid {
   padding-left: 30px;
   padding-right: 30px;
@@ -108,12 +113,25 @@ h6 a {
   text-decoration: none;
 }
 
+.sign-in-link:hover,
+.subscribe-link:hover {
+  text-decoration: none;
+}
+
 .sign-in-link {
+  color: #fff;
+}
+
+.sign-in-link:hover {
   color: #fff;
 }
 
 .subscribe-link {
   background-color: #fff;
+  color: #f72210;
+}
+
+.subscribe-link:hover {
   color: #f72210;
 }
 
@@ -221,9 +239,38 @@ h6 a {
   border-top: 1px solid #ddd;
 }
 
+.opinion-item {
+  display: grid;
+  grid-template-columns: 63px 1fr;
+  grid-gap: 15px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.opinion-first {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.opinion-item h6 a:hover {
+  text-decoration: none;
+  color: #f72210;
+}
+
+.opinion-author {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: condensed;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #555;
+
+}
+
 .featured-story img,
 .top-story img,
-.culture-travel-item img {
+.culture-travel-item img,
+.opinion-item img {
   width: 100%;
 }
 
