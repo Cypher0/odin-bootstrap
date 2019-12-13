@@ -35,6 +35,22 @@ h3 a:hover {
   text-decoration: underline #f72210;
 }
 
+h4 {
+  margin: 10px 5px;
+  font-family: "Lora", serif;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+h4 a {
+  color: inherit;
+}
+
+h4 a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 h5 {
   padding-bottom: 6px;
   font-size: 16px;
@@ -142,16 +158,19 @@ h5 {
 
 /* Main News section */
 
-.featured-stories {
+.featured-stories,
+.stories-main,
+.opinion-news {
   padding-top: 15px;
 }
 
-.featured-story {
-  padding-bottom: 20px;
+.culture-travel {
+  margin-top: 15px;
+  background-color: #f4f5f7;
 }
 
-.featured-story img {
-  width: 100%;
+.culture-travel h5 {
+  padding: 10px;
 }
 
 .img-wrapper {
@@ -174,4 +193,39 @@ h5 {
   text-decoration: none;
   color: #f72210;
   background-color: rgba(255,255,255,.9);
+}
+
+.featured-story,
+.culture-travel-item {
+  padding-bottom: 20px;
+}
+
+.featured-story img,
+.top-story img,
+.culture-travel-item img {
+  width: 100%;
+}
+
+.culture-travel-content {
+  margin: 0 5px 10px 5px;
+  color: rgba(39,39,39,.5);
+}
+
+.tag {
+  margin: 0 5px;
+  padding: 0 5px;
+  background-color: #c2d4d7;
+}
+
+.tag:hover {
+  background-color: #272727;
+  color: #c2d4d7;
+}
+
+.tag a {
+  color: inherit;
+}
+
+.tag a:hover {
+  text-decoration: none;
 }
