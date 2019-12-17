@@ -14,6 +14,15 @@ body {
   background: #f4f5f6;
 }
 
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: condensed;
+  line-height: 22px;
+}
+
 h3 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -23,10 +32,12 @@ h3 {
   line-height: 24px;
 }
 
+h2 a,
 h3 a {
   color: #000;
 }
 
+h2 a:hover,
 h3 a:hover {
   color: #000;
   text-decoration: underline #f72210;
@@ -233,7 +244,9 @@ h6 a:hover {
 .culture-travel-item,
 .opinion,
 .latest-news,
-.magazine {
+.magazine,
+.editors-pick,
+.slideshows {
   padding-bottom: 20px;
 }
 
@@ -281,7 +294,8 @@ h6 a:hover {
 .culture-travel-item img,
 .opinion-item img,
 .latest-news-item img,
-.editors-pick img {
+.editors-pick img,
+.slideshow-item img {
   width: 100%;
 }
 
@@ -458,4 +472,70 @@ h6 a:hover {
 
 .editors-pick-item {
   margin-bottom: 20px;
+}
+
+/* Featured Slideshows section */
+
+.slideshow-icon {
+  position: relative;
+}
+
+.slideshow-icon:after {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  width: 26px;
+  height: 25px;
+  border-right: 3px solid red;
+  border-bottom: 3px solid red;
+  content: "";
+}
+
+.slideshow-item {
+  margin-bottom: 40px;
+}
+
+.slide-category {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 70px;
+  height: 52px;
+  text-align: center;
+  line-height: 58px;
+  text-indent: 5px;
+  background: url(../images/slideshow.png) 0 0/contain no-repeat;
+}
+
+.category {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.category a {
+  padding: 8px 15px 9px;
+  background-color: rgba(255,255,255,.9);
+}
+
+.category a,
+.slide-category,
+.magazine-category {
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: condensed;
+  text-transform: uppercase;
+}
+
+.slide-category a {
+  font-size: 20px;
+}
+
+.category a,
+.slide-category a {
+  display: block;
+  text-decoration: none;
+  color: #f72210;
 }
