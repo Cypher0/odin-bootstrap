@@ -15,6 +15,7 @@ body {
 }
 
 h3 {
+  margin-top: 10px;
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: bold;
@@ -231,7 +232,8 @@ h6 a:hover {
 .featured-story,
 .culture-travel-item,
 .opinion,
-.latest-news {
+.latest-news,
+.magazine {
   padding-bottom: 20px;
 }
 
@@ -278,7 +280,8 @@ h6 a:hover {
 .top-story img,
 .culture-travel-item img,
 .opinion-item img,
-.latest-news-item img {
+.latest-news-item img,
+.editors-pick img {
   width: 100%;
 }
 
@@ -314,8 +317,7 @@ h6 a:hover {
   background-color: #f4f5f6;
 }
 
-.sign-up header,
-.magazine header {
+.sign-up header {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -370,13 +372,15 @@ h6 a:hover {
 
 /* Magazine Section */
 
-.magazine header {
+.section-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
   padding-bottom: 8px;
   border-bottom: 1px solid #d9d9d9;
 }
 
-.magazine-heading {
-  margin: 0 auto;
+.section-heading {
   display: flex;
   align-items: center;
 }
@@ -448,4 +452,10 @@ h6 a:hover {
   padding: 0 7px;
   color: #fff;
   background-color: #f72210;
+}
+
+/* Editor's Pick section */
+
+.editors-pick-item {
+  margin-bottom: 20px;
 }
