@@ -14,6 +14,10 @@ body {
   background: #f4f5f6;
 }
 
+strong {
+  font-weight: 700;
+}
+
 h1 {
   padding-top: 25px;
   padding-bottom: 11px;
@@ -109,7 +113,6 @@ h6 a:hover {
   padding-left: 30px;
   padding-right: 30px;
   background: #fff;
-  border-bottom: 1px solid #ebebeb;
 }
 
 /* HEADER */
@@ -637,4 +640,83 @@ h6 a:hover {
 .newsletter-info {
   padding: 25px;
   border: 1px solid #ddd;
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid #ebebeb;
+  color: #666;
+}
+
+footer a {
+  color: #666;
+}
+
+footer header {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 30px;
+  padding-bottom: 12px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.copyright {
+  margin-left: 15px;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.social {
+  display: flex;
+  margin-left: auto;
+}
+
+.social li {
+  margin-left: 10px;
+}
+
+.genericon {
+  display: block;
+  font-size: 25px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.genericon:hover {
+  text-decoration: none;
+}
+
+.edition-links,
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.edition-links li,
+.footer-nav li {
+  margin-top: 6px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #d9d9d9;
+}
+
+.edition-links .last,
+.footer-nav .last {
+  padding-right: 0;
+  margin-right: 0;
+  border-right: none;
+}
+
+.edition-links a:hover,
+.footer-nav a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.label {
+  cursor: default;
+  margin: 6px 15px 6px 0;
 }
