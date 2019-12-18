@@ -168,6 +168,17 @@ h6 a:hover {
   color: #f72210;
 }
 
+.genericon-menu {
+  width: 30px;
+  margin-top: -2px;
+  margin-left: 20px;
+  color: #fb9a94;
+}
+
+.genericon-menu:hover {
+  color: #fb9a94;
+}
+
 .header-bottom {
   position: relative;
   padding: 15px 160px 15px 0;
@@ -217,6 +228,16 @@ h6 a:hover {
   background: url(https://g.newsweek.com/www/images/icon-search-glass.svg) center/contain no-repeat #fff;
   width: 20px;
   height: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .header-top {
+    height: 55px;
+  }
+
+  .main-logo {
+    height: 20px;
+  }
 }
 
 /* Main News section */
@@ -270,14 +291,13 @@ h6 a:hover {
 .opinion,
 .latest-news,
 .magazine,
-.editors-pick,
-.slideshows {
+.editors-pick {
   padding-bottom: 20px;
 }
 
 .more-stories-item,
 .latest-news-item,
-.col-md-12 {
+.main-small {
   display: grid;
   grid-template-columns: 135px 1fr;
   grid-gap: 15px;
@@ -305,7 +325,7 @@ h6 a:hover {
 
 .opinion-item h6 a:hover,
 .latest-news-item h6 a:hover,
-.col-md-12 h6 a:hover {
+.main-small h6 a:hover {
   text-decoration: none;
   color: #f72210;
 }
@@ -328,7 +348,8 @@ h6 a:hover {
 .editors-pick img,
 .slideshow-item img,
 .main-category img,
-.newsletter img {
+.cta-newsletter img,
+.magazine img {
   width: 100%;
 }
 
@@ -417,6 +438,13 @@ h6 a:hover {
   color: #333;
 }
 
+@media only screen and (max-width: 768px) {
+  .latest-news-item {
+    grid-template-columns: 268px 1fr;
+  }
+}
+
+
 /* Magazine Section */
 
 .section-header {
@@ -432,6 +460,9 @@ h6 a:hover {
   align-items: center;
 }
 
+.magazine-cover {
+  margin-top: 30px;
+}
 .magazine img {
   vertical-align: bottom;
 }
@@ -579,7 +610,7 @@ h6 a:hover {
   margin-top: 30px;
 }
 
-.col-md-12 {
+.main-small {
   padding: 10px 0;
 }
 
@@ -609,13 +640,15 @@ h6 a:hover {
   grid-template-columns: 260px 1fr;
   grid-gap: 30px;
   align-items: center;
+  margin-bottom: 30px;
   padding: 30px;
   background-color: #f4f5f6;
 }
 
-.newsletter {
+.cta-newsletter {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 191px 1fr;
+  grid-template-rows: 300px auto;
 }
 
 .cta .btn-red {
@@ -632,14 +665,48 @@ h6 a:hover {
   margin-bottom: 25px;
 }
 
-.newsletter img {
-  height: 300px;
+.cta-newsletter img {
+  height: 100%;
   object-fit: cover;
 }
 
 .newsletter-info {
+  height: 300px;
   padding: 25px;
   border: 1px solid #ddd;
+}
+
+.col-lg-5 .newsletter-info {
+  height: 345px;
+}
+
+.col-md-12 .newsletter-info {
+  height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .cta-newsletter {
+    grid-template-columns: 190px 1fr;
+    grid-template-rows: 190px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .subscribe,
+  .cta-newsletter {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .cta-newsletter {
+    grid-template-rows: 160px 1fr;
+  }
+
+  .subscribe-info,
+  .newsletter-info {
+    text-align: center;
+  }
 }
 
 /* Footer */
@@ -719,4 +786,19 @@ footer header {
 .label {
   cursor: default;
   margin: 6px 15px 6px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  footer header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copyright {
+    margin: 10px 0;
+  }
+
+  .social {
+    margin-left: -10px;
+  }
 }
