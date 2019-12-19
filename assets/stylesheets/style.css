@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  min-width: 360px;
   max-width: 1310px;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -237,6 +238,14 @@ h6 a:hover {
 
   .main-logo {
     height: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-top .btn-red,
+  .header-top .btn-white {
+    font-size: 14px;
+    padding: 0 3px;
   }
 }
 
